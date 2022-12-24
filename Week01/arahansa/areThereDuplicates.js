@@ -18,8 +18,15 @@
  *
  * Space - O(1)
  */
+import { convertNumStr2CounterObj } from "./util/frequencyCounter";
+import { DuplicateError } from "./util/DuplicateError";
 
 
-function areThereDuplicates() {
-  // good luck. (supply any arguments you deem necessary.)
+export function areThereDuplicates() {
+  try{
+    convertNumStr2CounterObj(arguments, true)
+  }catch(e){
+    return e instanceof DuplicateError
+  }
+  return false
 }

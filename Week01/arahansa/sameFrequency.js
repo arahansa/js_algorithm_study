@@ -15,11 +15,13 @@
 import { convertNumStr2CounterObj } from "./util/frequencyCounter";
 
 export function sameFrequency(a, b){
-  if(a.toString().length !== b.toString().length)
+  const aStr = a.toString();
+  const bStr = b.toString();
+  if(aStr.length !== bStr.length)
     return false;
 
-  const objA = convertNumStr2CounterObj(a);
-  const objB = convertNumStr2CounterObj(b);
+  const objA = convertNumStr2CounterObj(aStr);
+  const objB = convertNumStr2CounterObj(bStr);
   for(let key in objA){
     if(objA[key] !== objB[key])
       return false;
