@@ -1,5 +1,4 @@
-import { sameFrequency } from "./sameFrequency";
-import { areThereDuplicates } from "./areThereDuplicates";
+import { areThereDuplicates } from "./02.areThereDuplicates";
 
 /**
  * areThereDuplicates(1, 2, 3) // false

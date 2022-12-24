@@ -1,7 +1,7 @@
 import { DuplicateError } from "./DuplicateError";
 
 /**
- * iterable 을 받아서 FrequncyCounter 용도로 변환
+ * iterable 을 받아서 FrequncyCounter 용도의 객체로 변환
  * 하지만.. 이것저것 욕심이 많아지는 함수일지도.. ㅋ
  *
  * @param param

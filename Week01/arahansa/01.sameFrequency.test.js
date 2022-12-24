@@ -1,4 +1,4 @@
-import { sameFrequency } from "./sameFrequency";
+import { sameFrequency } from "./01.sameFrequency";
 
 /**
  * sameFrequency(182,281) // true
