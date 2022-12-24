@@ -12,14 +12,17 @@
  * sameFrequency(3589578, 5879385) // true
  * sameFrequency(22,222) // false
  */
-
+import { convertNumStr2CounterObj } from "./util/frequencyCounter";
 
 export function sameFrequency(a, b){
-  const strA = a.toString();
-  const strB = b.toString();
-  if(strA.length !== strB.length){
-    return false
+  if(a.toString().length !== b.toString().length)
+    return false;
+
+  const objA = convertNumStr2CounterObj(a);
+  const objB = convertNumStr2CounterObj(b);
+  for(let key in objA){
+    if(objA[key] !== objB[key])
+      return false;
   }
-
-
+  return true;
 }
