@@ -7,8 +7,8 @@ import { sameFrequency } from "./01.sameFrequency";
  * sameFrequency(22,222) // false
  */
 test('sameFrequency(22,222) 은 거짓이다.', () => {
-  expect(sameFrequency(182,281)).toBeTruthy();
-  expect(sameFrequency(34,14)).toBeFalsy();
-  expect(sameFrequency(3589578,5879385)).toBeTruthy();
-  expect(sameFrequency(22,222)).toBeFalsy();
+  expect(sameFrequency(182,281)).toBe(true);
+  expect(sameFrequency(34,14)).toBe(false);
+  expect(sameFrequency(3589578,5879385)).toBe(true);
+  expect(sameFrequency(22,222)).toBe(false);
 });

@@ -6,7 +6,7 @@ import { areThereDuplicates } from "./02.areThereDuplicates";
  * areThereDuplicates('a', 'b', 'c', 'a') // true
  */
 test('areThereDuplicates 문제', () => {
-  expect(areThereDuplicates(1, 2, 3)).toBeFalsy();
-  expect(areThereDuplicates(1, 2, 2)).toBeTruthy();
-  expect(areThereDuplicates('a', 'b', 'c', 'a')).toBeTruthy();
+  expect(areThereDuplicates(1, 2, 3)).toBe(false);
+  expect(areThereDuplicates(1, 2, 2)).toBe(true);
+  expect(areThereDuplicates('a', 'b', 'c', 'a')).toBe(true);
 });
